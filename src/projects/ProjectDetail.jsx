@@ -1,4 +1,5 @@
 import { Project } from './Project';
+import { getImageUrl } from '../utils/imageUtils';
 
 export default function ProjectDetail({ project }) {
   return (
@@ -7,7 +8,7 @@ export default function ProjectDetail({ project }) {
         <div className="card large">
           <img
             className="rounded"
-            src={project.imageUrl}
+            src={getImageUrl(project.imageUrl)}
             alt={project.name}
           />
           <section className="section dark">

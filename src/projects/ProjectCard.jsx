@@ -1,6 +1,7 @@
 import { Project } from './Project';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import { getImageUrl } from '../utils/imageUtils';
 
 function formatDescription(description) {
     return description.substring(0, 60) + '...';
@@ -15,7 +16,7 @@ function ProjectCard(props) {
     }
     return (
         <div className="card">
-            <img src={project.imageUrl} alt={project.name} />
+            <img src={getImageUrl(project.imageUrl)} alt={project.name} />
             
             <section className="section dark">
                 <Link to={'/projects/' + project.id}>

@@ -4,6 +4,7 @@ import ProjectsPage from './projects/ProjectsPage';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import {  Routes, Route, NavLink, BrowserRouter as Router} from "react-router-dom";
+import logoImage from '/assets/logo-3.svg';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Router>
       <header className="sticky">
         <span className="logo">
-          <img src="/assets/logo-3.svg" alt="logo" width="35" height="70" />
+          <img src={logoImage} alt="logo" width="35" height="70" />
         </span>
         <NavLink to="/" className="button rounded">
           <span className="icon-home"></span>
