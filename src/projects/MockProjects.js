@@ -40,7 +40,7 @@ export const MOCK_PROJECTS = [
     name: 'Purdy, Keeling and Smitham',
     description:
       'Innovative 6th generation model. Perferendis libero qui iusto et ullam cum sint molestias vel.',
-    imageUrl: '/assets/placeimg_500_300_arch5.jpg',
+    imageUrl: './assets/placeimg_500_300_arch5.jpg',
     contractTypeId: 4,
     contractSignedOn: '2013-05-26T01:10:42.344Z',
     budget: 45660,
